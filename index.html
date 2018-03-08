@@ -8,49 +8,63 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap.min-v1.0.4.css">
     <link rel="stylesheet" href="css/custom-theme-v1.0.4.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <div class="logo">
+        <div class="h-logo">
             <img src="img/marine-online-logo.png" alt="">
         </div>
-        <div class="search">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div><!-- /btn-group -->
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
+        <div class="h-search">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">Veseel<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+            <input type="text" class="search-input">
+            <i class="glyphicon icon-search"></i>
         </div>
-        <div class="marineTools" id="marineTools">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div><!-- /btn-group -->
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
+        <div class="h-marineTools" id="marineTools">
+            <ul class="marineTools-list">
+                <li><a href="#">Live Map</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Marine Tools<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Marine Service</a></li>
+                <li><a href="#">Marine Info</a></li>
+            </ul>
+        </div>
+        <div class="h-login">
+            <ul>
+                <li class="login"><a href="#">Login</a></li>
+                <span>|</span>
+                <li class="register"><a href="#">Register</a></li>
+            </ul>
         </div>
     </div>
-    <div class="nav"></div>
+    <div class="nav">
+
+    </div>
     <div class="tools"></div>
     <div class="services"></div>
     <div class="information"></div>
