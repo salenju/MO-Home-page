@@ -8,7 +8,10 @@ body a { color:#212121; display: inline-block;}
 @h30: 30px;
 @h40: 40px;
 @h80: 80px;
-@color: #0081cc;
+@h100:100px;
+@color-primary: #0081cc;
+@color-banner: #FFFEFF;   // banner部分的主要颜色
+@color-text: #212121;   // 大面积正文颜色
 
 
 .container {
@@ -52,7 +55,7 @@ body a { color:#212121; display: inline-block;}
             outline: none;
         }
     }
-    .h-marineTools {
+    .h-nav {
         display:flex;
         justify-content:flex-start;
         align-items: center;
@@ -72,9 +75,9 @@ body a { color:#212121; display: inline-block;}
                 padding: 0 15px;
             }
             >li:hover {
-                border: 1px solid @color;
+                border: 1px solid @color-primary;
                 border-radius:20px;
-                color: @color;
+                color: @color-primary;
             }
         }
     }
@@ -90,11 +93,131 @@ body a { color:#212121; display: inline-block;}
     }
 }
 
-/* nav */
-.nav {
+/* menu */
+.banner {
     width: 100%;
-    height: 800px;
+    height: 1000px;  // for layout
+    background: #019EED;    // for layout
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: @color-banner;
+    .b-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;  // for layout
+        background: #b3b3b3;    // for layout
+        h1 {
+            color: @color-banner;
+            font-size: 60px;
+        }
+        h3 {
+            color: @color-banner;
+            font-size: 26px;
+        }
+    }
+    .b-tab {
+        width: 100%;
+        //height: 200px;  // for layout
+        background: #8ae234;    // for layout
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .b-tab-menu {
+            margin: 150px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: @h30;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border:3px solid @color-banner;
+                        border-radius: 15px;
+                        padding:0 10px;
+                        height: 100%;
+                        color: @color-banner;
+                    }
+                }
+                li::after {
+                    content: "";
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 4px;
+                    width: 40px;
+                    background: @color-banner;
+                }
+                li:last-child {
+                    width: 0;
+                }
+
+            }
+        }
+        .b-tab-box {
+            width: 500px;
+            height: @h80;
+            background: #f40;
+            text-align: center;
+            line-height: @h80;
+            .hide {
+                display: none;
+            }
+        }
+    }
+    .b-signUp {
+        width: 100%;
+        height: 200px;  // for layout
+        background: #4e9a06;    // for layout
+        button {
+            background: #fff;
+        }
+    }
+
+}
+.tools {
+    width: 100%;
+    height: 200px;  // for layout
+    background: #2365ff;    // for layout
+}
+.services {
+    width: 100%;
+    height: 200px;  // for layout
+    background: #8ae234;    // for layout
+}
+.information {
+    width: 100%;
+    height: 200px;  // for layout
     background: #00c6f5;    // for layout
 }
+.download {
+    width: 100%;
+    height: 200px;  // for layout
+    background: #1AC4C3;    // for layout
+}
+.footer.light {
+    width: 100%;
+    background: #EFEFEF;
+    .container {
+        background: transparent;
+    }
+}
+
+
 
 

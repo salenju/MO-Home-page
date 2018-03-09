@@ -70,7 +70,7 @@ body a {
   border: 0;
   outline: none;
 }
-.header .h-marineTools {
+.header .h-nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -78,19 +78,19 @@ body a {
   height: 40px;
   margin: 0 80px;
 }
-.header .h-marineTools ul.marineTools-list {
+.header .h-nav ul.marineTools-list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 30px;
   line-height: 30px;
 }
-.header .h-marineTools ul.marineTools-list > li {
+.header .h-nav ul.marineTools-list > li {
   height: 100%;
   margin: 0 15px;
   padding: 0 15px;
 }
-.header .h-marineTools ul.marineTools-list > li:hover {
+.header .h-nav ul.marineTools-list > li:hover {
   border: 1px solid #0081cc;
   border-radius: 20px;
   color: #0081cc;
@@ -103,9 +103,123 @@ body a {
 .header .h-login ul li {
   margin: 0 5px;
 }
-/* nav */
-.nav {
+/* menu */
+.banner {
   width: 100%;
-  height: 800px;
+  height: 1000px;
+  background: #019EED;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fffeff;
+}
+.banner .b-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background: #b3b3b3;
+}
+.banner .b-title h1 {
+  color: #fffeff;
+  font-size: 60px;
+}
+.banner .b-title h3 {
+  color: #fffeff;
+  font-size: 26px;
+}
+.banner .b-tab {
+  width: 100%;
+  background: #8ae234;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner .b-tab .b-tab-menu {
+  margin: 150px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .b-tab .b-tab-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .b-tab .b-tab-menu ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+}
+.banner .b-tab .b-tab-menu ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fffeff;
+  border-radius: 15px;
+  padding: 0 10px;
+  height: 100%;
+  color: #fffeff;
+}
+.banner .b-tab .b-tab-menu ul li::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4px;
+  width: 40px;
+  background: #fffeff;
+}
+.banner .b-tab .b-tab-menu ul li:last-child {
+  width: 0;
+}
+.banner .b-tab .b-tab-box {
+  width: 500px;
+  height: 80px;
+  background: #f40;
+  text-align: center;
+  line-height: 80px;
+}
+.banner .b-tab .b-tab-box .hide {
+  display: none;
+}
+.banner .b-signUp {
+  width: 100%;
+  height: 200px;
+  background: #4e9a06;
+}
+.banner .b-signUp button {
+  background: #fff;
+}
+.tools {
+  width: 100%;
+  height: 200px;
+  background: #2365ff;
+}
+.services {
+  width: 100%;
+  height: 200px;
+  background: #8ae234;
+}
+.information {
+  width: 100%;
+  height: 200px;
   background: #00c6f5;
+}
+.download {
+  width: 100%;
+  height: 200px;
+  background: #1AC4C3;
+}
+.footer.light {
+  width: 100%;
+  background: #EFEFEF;
+}
+.footer.light .container {
+  background: transparent;
 }
