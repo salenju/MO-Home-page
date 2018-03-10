@@ -30,6 +30,9 @@ body a {
   display: inline-block;
 }
 /* variables */
+.dn {
+  display: none;
+}
 .container {
   background: #bae7ff;
 }
@@ -198,13 +201,81 @@ body a {
 }
 .tools {
   width: 100%;
-  height: 200px;
-  background: #2365ff;
+  height: 651px;
+  padding: 124px 180px 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tools > h4 {
+  color: #0081cc;
+  font-weight: bold;
+}
+.tools .t-tab {
+  width: 100%;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #cfcfcf;
+}
+.tools .t-tab .t-tab-menu,
+.tools .t-tab .t-tab-box {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tools .t-tab .t-tab-menu {
+  padding: 0 95px;
+}
+.tools .t-tab .t-tab-menu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tools .t-tab .t-tab-menu li {
+  height: auto;
+  width: 80px;
+  padding: 25px 0;
+}
+.tools .t-tab .t-tab-menu li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tools .t-tab .t-tab-menu li a > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 32px;
+  margin: 20px 0 0;
+}
+.tools .t-tab .t-tab-menu li.t-active {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background: #0081cc;
+}
+.tools .t-tab .t-tab-menu li.t-active a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tools .t-tab .t-tab-menu li:last-child {
+  margin-right: 0;
 }
 .services {
   width: 100%;
   height: 932px;
-  background: #8ae234;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +284,6 @@ body a {
 .services .s-content {
   width: 100%;
   padding: 107px 0;
-  background: #f83f3c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,13 +296,100 @@ body a {
   margin: 71px 0 0 0;
   width: 100%;
   height: 389px;
-  background: #f2ae00;
 }
-.services .s-content .s-content-introduce {
+.services .s-content .s-content-detail ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.services .s-content .s-content-detail li {
+  width: 340px;
+  height: 389px;
+  margin: 0 26px 0 0;
+}
+.services .s-content .s-content-detail li > a {
+  width: 100%;
+  height: 200px;
+}
+.services .s-content .s-content-detail li > a img {
+  width: 100%;
+  height: 100%;
+}
+.services .s-content .s-content-detail li .detail {
+  padding: 19px 33px 34px 21px;
+}
+.services .s-content .s-content-detail li .detail p {
+  width: 100%;
+  height: 32px;
+}
+.services .s-content .s-content-detail li .detail span {
+  display: inline-block;
+  width: 19px;
+  height: 4px;
+  background-color: #0081cc;
+  margin: 8px 0 14px;
+}
+.services .s-content .s-content-detail li .detail a.more {
+  width: 100px;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #0081cc;
+  color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 ;
+}
+.services .s-content .s-content-detail li:last-child {
+  margin: 0;
+}
+.services .s-content .s-content-img {
   margin: 30px 0 0 0;
   width: 100%;
   height: 200px;
   background: magenta;
+}
+.services .s-content .s-content-img ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.services .s-content .s-content-img li {
+  width: 462px;
+  height: 100%;
+  margin: 0 26px 0 0;
+  position: relative;
+}
+.services .s-content .s-content-img li div.img-default,
+.services .s-content .s-content-img li div.img-mask {
+  width: 462px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .s-content .s-content-img li div.img-default {
+  background: url(../img/s-5.JPG) no-repeat center center;
+}
+.services .s-content .s-content-img li div.img-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0081cc;
+}
+.services .s-content .s-content-img li span {
+  width: 140px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+.services .s-content .s-content-img li:last-child {
+  margin: 0;
 }
 .information {
   width: 100%;
