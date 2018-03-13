@@ -8,7 +8,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap.min-v1.0.4.css">
     <link rel="stylesheet" href="css/custom-theme-v1.0.4.css">
-    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="fonts/icon-font-20180312/iconfont.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -70,28 +70,110 @@
             <h3>One-stop Integrated Maritme Platform</h3>
         </div>
         <div class="b-tab">
-            <div class="b-tab-menu">
+            <div class="b-tab-menu" id="b_tab_menu">
+                <span class="tab-menu-img"></span>
                 <ul>
-                    <li><a href="#">Chartering</a></li>
-                    <li><a href="#">Crewing</a></li>
-                    <li><a href="#">Marine Supplies</a></li>
-                    <li><a href="#">Bunkerng</a></li>
-                    <li><a href="#">Port Agency</a></li>
-                    <li><a href="#">SNP/Insurance</a></li>
+                    <li>
+                        <a href="#">Chartering</a>
+                        <div class="tab-menu-icon  tab-menu-chartering" >
+                            <div class="tab-menu-wrapper"> <i class="icon iconfont bmo-compass"></i></div>
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Crewing</a>
+                        <div class="tab-menu-icon  tab-menu-crewing " >
+                            <div class="tab-menu-wrapper wrapper-top"> <i class="icon iconfont bmo-hat"></i></div>
+                            <div class="tab-menu-wrapper wrapper-bottom"> <i class="icon iconfont bmo-search-vessel"></i></div>
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Marine Supplies</a>
+                        <div class="tab-menu-icon  tab-menu-ms" >
+                            <div class="tab-menu-wrapper"> <i class="icon iconfont bmo-search-port"></i></div>
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Bunkering</a>
+                        <div class="tab-menu-icon  tab-menu-bunkering" >
+                            <div class="tab-menu-wrapper"> <i class="icon iconfont bmo-oil"></i></div>
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Port Agency</a>
+                        <div class="tab-menu-icon  tab-menu-pa" >
+                            <div class="tab-menu-wrapper"> <i class="icon iconfont bmo-calculator"></i></div>
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">SNP</a>
+                        <div class="tab-menu-icon  tab-menu-snp" >
+                            <div class="tab-menu-wrapper"> <i class="icon iconfont bmo-vessel-value"></i></div>
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Insurance</a>
+                        <div class="tab-menu-icon  tab-menu-insurance" >
+                            <span class="left"></span>
+                            <span class="middle"></span>
+                            <span class="right"></span>
+                        </div>
+                    </li>
                 </ul>
+                <span class="tab-menu-img"></span>
             </div>
-            <div class="b-tab-box">
-                <div>我是Chartering</div>
-                <div class="hide">我是Crewing</div>
-                <div class="hide">我是Marine Supplies</div>
-                <div class="hide">我是Bunkerng</div>
-                <div class="hide">我是Port Agency</div>
-                <div class="hide">我是SNP/Insurance</div>
+            <ul class="b-tab-box" id="b_tab_box">
+                <li>
+                    <p>Welcome to Chartering.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+                <li>
+                    <p>Welcome to Crewing.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+                <li>
+                    <p>Welcome to Marine Supplies.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+                <li>
+                    <p>Welcome to Bunkerng.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+                <li>
+                    <p>Welcome to Port Agency.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+                <li>
+                    <p>Welcome to SNP.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+                <li>
+                    <p>Welcome to Insurance.</p>
+                    <p>We are devoted to Making things easy for all shipowners worldwide.</p>
+                </li>
+            </ul>
+            <div class="b-signUp">
+                <a href="#">Sign Up</a>
             </div>
         </div>
-        <div class="b-signUp">
-            <button type="button" class="btn btn-lg btn-secondary">Sign Up</button>
-        </div>
+        <div class="b-icon"></div>
     </div>
 </div>
 <div class="container">
@@ -99,53 +181,59 @@
         <h4>TOOLS</h4>
         <div class="t-tab">
             <div class="t-tab-menu">
-                <ul>
+                <ul class="icon-lists" id="icon_lists">
                     <li>
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                           <i class="icon iconfont bmo-search-vessel"></i>
                             <p>Vessel Search</p>
                         </a>
                     </li>
-                    <li>
+                    <li >
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                            <i class="icon iconfont bmo-search-port"></i>
                             <p>Port Search</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                            <i class="icon iconfont bmo-compass"></i>
                             <p>TCE</p>
                         </a>
                     </li>
-                    <li>
+                    <li >
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                            <i class="icon iconfont bmo-hat"></i>
                             <p>Crew Budget Calculator</p>
                         </a>
                     </li>
-                    <li>
+                    <li >
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                            <i class="icon iconfont bmo-oil"></i>
                             <p>FFP</p>
                         </a>
                     </li>
-                    <li class="t-active">
+                    <li>
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                            <i class="icon iconfont bmo-calculator"></i>
                             <p>PDA</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/t-1.JPG" alt="">
+                            <i class="icon iconfont bmo-vessel-value"></i>
                             <p>Vessel Valuator</p>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="t-tab-box">
-
+                <ul>
+                    <li><p>Provide all shipowners the best insurance procurement and service experience globally.Provide all shipowners the best insurance procurement and service experience globally.Provide all shipowners the best insurance procurement and service experience globally.Provide all shipowners the best insurance procurement and service experience globally.Provide all shipowners the.</p></li>
+                </ul>
+                <div class="tools-number">
+                    <span>7</span>
+                    <span>TOOLS</span>
+                </div>
             </div>
         </div>
     </div>
@@ -155,38 +243,38 @@
             <div class="s-content-detail">
                 <ul>
                     <li>
-                        <a href="#"><img src="img/s-1.JPG" alt=""></a>
+                        <a href="#"><img src="img/Port_Agency.jpg" alt=""></a>
                         <div class="detail">
                             <h4>Port Agency</h4>
                             <span></span>
-                            <p>Information on the 3000+ ports around the world.</p>
+                            <p>Source, offer, and secure fixtures in the most efficient and convenient way.</p>
                             <a href="#" class="more">more</a>
                         </div>
                     </li>
                     <li>
-                        <a href="#"><img src="img/s-2.JPG" alt=""></a>
+                        <a href="#"><img src="img/Bunkering.jpg" alt=""></a>
                         <div class="detail">
                             <h4>Bunkering</h4>
                             <span></span>
-                            <p>Take it easy, global offshore oil suppliers, online transactions.</p>
+                            <p>Source, offer, and secure fixtures in the most efficient and convenient way.</p>
                             <a href="#" class="more">more</a>
                         </div>
                     </li>
                     <li>
-                        <a href="#"><img src="img/s-3.JPG" alt=""></a>
+                        <a href="#"><img src="img/Chartering.jpg" alt=""></a>
                         <div class="detail">
                             <h4>Chartering</h4>
                             <span></span>
-                            <p>Offshore uber, zero commission cargo match, online transactions.</p>
+                            <p>Source, offer, and secure fixtures in the most efficient and convenient way.</p>
                             <a href="#" class="more">more</a>
                         </div>
                     </li>
                     <li>
-                        <a href="#"><img src="img/s-4.JPG" alt=""></a>
+                        <a href="#"><img src="img/Marine_Supplies.jpg" alt=""></a>
                         <div class="detail">
                             <h4>Maring Supplies</h4>
                             <span></span>
-                            <p>Global maritime supply, original and OEM spare parts international delivery.</p>
+                            <p>Source, offer, and secure fixtures in the most efficient and convenient way.</p>
                             <a href="#" class="more">more</a>
                         </div>
                     </li>
@@ -196,31 +284,28 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="img-default">
-                                <span>CREWING</span>
-                            </div>
-                            <div class="dn">
-                                <span>SHIP SALES AND PURCHASE</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="img-default">
-                                <span>MARIN INSURANCE</span>
-                            </div>
-                            <div class="dn img-mask">
-                                <span>SHIP SALES AND PURCHASE</span>
+                            <div class="img-default img-crewing">
+                                <div>
+                                    <span>CREWING</span>
+                                </div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="img-default">
-                                <span>MARINE INSURANCE</span>
+                            <div class="img-default img-ship">
+                                <div>
+                                    <span>SHIP SALES AND PURCHASE</span>
+                                </div>
                             </div>
-                            <div class="dn">
-                                <span>SHIP SALES AND PURCHASE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img-default img-insurance">
+                                <div>
+                                    <span>MARIN INSURANCE</span>
+                                </div>
                             </div>
                         </a>
                     </li>
