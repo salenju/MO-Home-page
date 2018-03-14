@@ -18,86 +18,9 @@ body a { color:#212121; display: inline-block;}
 @color-linkHover:#18AAFF;   // 链接hover时的颜色
 @font-family:Roboto;    // 整体字体
 
-.dn {
-    display: none;
+.show {
+    display: block;
 }
-
- /* header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: @h80;
-    background: #fff;
-    .h-logo {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .h-search {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        //width: 350px;
-        height: @h30;
-        margin: 0 0 0 10px;
-        border:1px solid #d9d9d9;
-        border-radius:15px;
-
-        >li.dropdown {
-            padding:0 15px;
-            border-right: 1px solid #d9d9d9;
-        }
-        i.icon-search {
-            font-size: 18px;
-            margin: 0 15px;
-            cursor: pointer;
-        }
-        .search-input {
-            margin: 0 15px;
-            border:0;
-            outline: none;
-        }
-    }
-    .h-nav {
-        display:flex;
-        justify-content:flex-start;
-        align-items: center;
-        width: 600px;
-        height: @h40;
-        //background: #b3b3b3;    // for layout
-        margin:0 80px;
-        ul.marineTools-list {
-            display: flex;
-            justify-content:flex-start;
-            align-items: center;
-            height: @h30;
-            line-height:@h30;
-            >li {
-                height:100%;
-                margin:0 15px;
-                padding: 0 15px;
-            }
-            >li:hover {
-                border: 1px solid @color-primary;
-                border-radius:20px;
-                color: @color-primary;
-            }
-        }
-    }
-    .h-login {
-        ul {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            li {
-                margin: 0 5px;
-            }
-        }
-    }
-}
-
 /* banner */
 .banner {
     .container {
@@ -107,6 +30,7 @@ body a { color:#212121; display: inline-block;}
     width: 100%;
     height: 850px;
     background: url('../img/Main_Banner_Background.jpg') no-repeat center;    // for layout
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,9 +345,6 @@ body a { color:#212121; display: inline-block;}
                 height: 42px;
                 text-align: center;
             }
-            li.show {
-                display: block;
-            }
         }
         .b-signUp {
             width: 100%;
@@ -477,7 +398,6 @@ body a { color:#212121; display: inline-block;}
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 3px solid #cfcfcf;
         .t-tab-menu {
             width: 100%;
             height: 150px;
@@ -506,7 +426,7 @@ body a { color:#212121; display: inline-block;}
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 80px;
+                        width: 53px;
                         height: 32px;
                         color: @color-hint;
                     }
@@ -514,6 +434,11 @@ body a { color:#212121; display: inline-block;}
                         font-size: 40px;
                         color: @color-primary;
                     }
+                }
+            }
+            li:nth-child(4) {
+                a>p{
+                    width: 80px;
                 }
             }
             li.t-active {
@@ -533,6 +458,11 @@ body a { color:#212121; display: inline-block;}
                     }
                 }
             }
+            li:nth-child(4).t-active {
+                a>p{
+                    width: 100px;
+                }
+            }
             li:last-child {
                 margin-right: 0;
             }
@@ -548,10 +478,13 @@ body a { color:#212121; display: inline-block;}
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
+                width: 930px;
                 height: 103px;
-                li>p {
-                    color:@color-hint;
+                li {
+                    display: none;
+                    >p {
+                        color:@color-hint;
+                    }
                 }
             }
             .tools-number {
@@ -573,6 +506,24 @@ body a { color:#212121; display: inline-block;}
                     font-family: LucidaGrande;
                     color:#c3c3c3;
                     text-align: center;
+                }
+            }
+        }
+        .t-tab-hint {
+            width: 100%;
+            height: 3px;
+            background: #cfcfcf;
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                li {
+                    display: inline-block;
+                    width: 152.5px;
+                    height: 100%;
+                }
+                li.select {
+                    background: @color-primary;
                 }
             }
         }

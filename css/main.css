@@ -30,78 +30,8 @@ body a {
   display: inline-block;
 }
 /* variables */
-.dn {
-  display: none;
-}
-/* header */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 80px;
-  background: #fff;
-}
-.header .h-logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.header .h-search {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 30px;
-  margin: 0 0 0 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 15px;
-}
-.header .h-search > li.dropdown {
-  padding: 0 15px;
-  border-right: 1px solid #d9d9d9;
-}
-.header .h-search i.icon-search {
-  font-size: 18px;
-  margin: 0 15px;
-  cursor: pointer;
-}
-.header .h-search .search-input {
-  margin: 0 15px;
-  border: 0;
-  outline: none;
-}
-.header .h-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 600px;
-  height: 40px;
-  margin: 0 80px;
-}
-.header .h-nav ul.marineTools-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 30px;
-  line-height: 30px;
-}
-.header .h-nav ul.marineTools-list > li {
-  height: 100%;
-  margin: 0 15px;
-  padding: 0 15px;
-}
-.header .h-nav ul.marineTools-list > li:hover {
-  border: 1px solid #0081cc;
-  border-radius: 20px;
-  color: #0081cc;
-}
-.header .h-login ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.header .h-login ul li {
-  margin: 0 5px;
+.show {
+  display: block;
 }
 /* banner */
 .banner {
@@ -109,6 +39,7 @@ body a {
   width: 100%;
   height: 850px;
   background: url('../img/Main_Banner_Background.jpg') no-repeat center;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,9 +340,6 @@ body a {
   height: 42px;
   text-align: center;
 }
-.banner .b-tab .b-tab-box li.show {
-  display: block;
-}
 .banner .b-tab .b-signUp {
   width: 100%;
   display: flex;
@@ -462,7 +390,6 @@ body a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid #cfcfcf;
 }
 .tools .t-tab .t-tab-menu {
   width: 100%;
@@ -495,13 +422,16 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: 53px;
   height: 32px;
   color: #666666;
 }
 .tools .t-tab .t-tab-menu li a i.icon {
   font-size: 40px;
   color: #0081cc;
+}
+.tools .t-tab .t-tab-menu li:nth-child(4) a > p {
+  width: 80px;
 }
 .tools .t-tab .t-tab-menu li.t-active {
   width: 150px;
@@ -518,6 +448,9 @@ body a {
   color: #ffffff;
   font-size: 40px;
 }
+.tools .t-tab .t-tab-menu li:nth-child(4).t-active a > p {
+  width: 100px;
+}
 .tools .t-tab .t-tab-menu li:last-child {
   margin-right: 0;
 }
@@ -532,8 +465,11 @@ body a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 930px;
   height: 103px;
+}
+.tools .t-tab .t-tab-box ul li {
+  display: none;
 }
 .tools .t-tab .t-tab-box ul li > p {
   color: #666666;
@@ -558,6 +494,24 @@ body a {
   font-family: LucidaGrande;
   color: #c3c3c3;
   text-align: center;
+}
+.tools .t-tab .t-tab-hint {
+  width: 100%;
+  height: 3px;
+  background: #cfcfcf;
+}
+.tools .t-tab .t-tab-hint ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.tools .t-tab .t-tab-hint ul li {
+  display: inline-block;
+  width: 152.5px;
+  height: 100%;
+}
+.tools .t-tab .t-tab-hint ul li.select {
+  background: #0081cc;
 }
 /*services*/
 .services {
