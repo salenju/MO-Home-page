@@ -1654,6 +1654,9 @@ a.alert-link{
     padding:10px 8px;
     border-color: #d9d9d9;
 }
+.table-box .table > tbody > tr:hover{
+    background-color: #e6f7ff;
+}
 .table-box .table-small-wrap{
     padding:0 8px;
     border-radius:4px ;
@@ -1857,7 +1860,7 @@ a.alert-link{
     .footer .footer-logo {
         display: inline;
         float : left;
-        margin-top: 5px;
+        margin-top: 8px;
     }
     .footer .footer-logo img {
         max-height: 30px;
@@ -1869,7 +1872,7 @@ a.alert-link{
         display: inline;
     }
     .footer .copyright {
-        margin: 10px 0 0 21px;
+        margin: 13px 0 0 21px;
         float: left;
     }
     .footer .social-media {
@@ -1881,7 +1884,7 @@ a.alert-link{
         margin-top: 10px;
     }
     .footer .footer-links {
-        margin: 10px 22px 0 0;
+        margin: 13px 22px 0 0;
         float: right;
     }
 }
